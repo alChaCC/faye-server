@@ -1,5 +1,3 @@
-# How to setup standalone faye websocket server usign SSL
-
 References:
 
 [faye-websockets-part-1](https://www.driftingruby.com/episodes/faye-websockets-part-1)
