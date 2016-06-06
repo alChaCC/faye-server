@@ -1,10 +1,10 @@
 port: 8080
 user: deploy
 group: deploy
-pid: /home/deploy/faye/pids/thin.pid
+pid: /home/deploy/faye-server/current/faye/pids/thin.pid
 timeout: 30
 wait: 30
-log: /home/deploy/faye/log/thin.log
+log: /home/deploy/faye-server/current/log/thin.log
 max_conns: 4096
 require: []
 environment: production
@@ -13,9 +13,9 @@ servers: 1
 threaded: true
 no-epoll: true
 daemonize: true
-chdir: /home/deploy/faye-server
+chdir: /home/deploy/faye-server/current
 tag: faye
 ssl: true
-ssl-key-file: /home/deploy/thin/ssl/thin.key
-ssl-cert-file: /home/deploy/thin/ssl/thin.crt
+ssl-key-file: /home/deploy/faye-server/current/thin/ssl/thin.key
+ssl-cert-file: /home/deploy/faye-server/current/thin/ssl/thin.crt
 ssl-disable-verify: true
