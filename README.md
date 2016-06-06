@@ -64,7 +64,9 @@ AUTH_TOKEN: 'your_secret'
 
 ### Create thin.yml file
 ps. copied from `config/thin.yml.example`
+
 `vim /home/deploy/faye-server/shared/config/thin.yml`
+
 ```
 port: 8080
 user: deploy
@@ -92,8 +94,12 @@ ssl-disable-verify: true
 
 ## Step2. Clone the project
 
+Go back to your local machine.
+
 ```
 git clone https://github.com/alChaCC/faye-server.git
+cd faye-server
+bundle 
 ```
 
 ### Update Some Configurations
