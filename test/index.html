@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://52.203.147.228:8080/faye/faye.js"></script>
+    <script>
+      $(function() {
+        // Create a new client to connect to Faye
+        var client = new Faye.Client('https://52.203.147.228:8080/faye');
+
+        // Subscribe to the public channel
+        var subscription = client.subscribe('/test', function(data) {
+          $('.counter').html("thread:" + data.thread + "count: " + data.count);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p class='counter'>Hi!</p>
+  </body>
+</html>
