@@ -3,7 +3,7 @@ require 'uri'
 class SimpleTest
   def broadcast_message(channel, content)
     message = { channel: channel, data: content, ext: { auth_token: 'your_secret' }}
-    uri = URI.parse('https://52.203.147.228:8080/faye')
+    uri = URI.parse('https://23.20.190.151:8080/faye')
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
